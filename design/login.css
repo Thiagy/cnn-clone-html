@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white; 
+}
+
+.logo{
+    height: 80vh;
+    width: 38.46%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #161616;
+    color: white;
+}
+.logo>h2{
+    font-weight: bolder;
+    font-size: 24px;
+}
+.logo>p>a{
+    color: white;
+    text-decoration: underline;
+}
+.main-div{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 2vh 0;
+    gap: 4vh;
+    background-image: linear-gradient(to right, #090909, #320909);
+}
+.forgot-password{
+    font-size: 13px; 
+    width: 62%; 
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+.forgot-password:hover{
+    text-decoration: underline;
+    color: #B1B1B1;
+}
+input{
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+    padding: 1vh;
+}
+.div-input{
+    height: 6.5vh;
+    width: 62%; 
+    border-radius: 7px;
+    font-size: 17px;
+    border: 0.1px solid white;
+    color: #B1B1B1;
+    cursor: text;
+    background-color: #1A1616;
+}
+input:hover{
+    color: white;
+}
+.div-button{
+    width: 62%;
+}
+.button-login{
+    height: 56px;
+    width: 100%;
+    padding: 1.6vh 0;
+    background-color: #E03030;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.footer-list{
+    padding: 5vh 0;
+    display: flex; 
+    gap:  2vh; 
+    list-style: none; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer-record-line{
+    background-color: white; 
+    height: 0.1px; 
+}
+a:hover{
+    text-decoration: underline;
+}
+.social-media-box{
+    display: flex; 
+    gap: 3vh; 
+    align-items: center;
+    flex-wrap: wrap;
+}
+.audio a, .live-tv a, .follow-cnn{
+    font-size: 15px;
+    color: white;
+}
+.made-by{
+    text-align: center;
+}
+@media (max-width: 1024px){
+    .audio, .live-tv{
+        display: none;
+    }
+}
+@media (max-width: 768px){
+    .logo{
+        width: 80%;
+    }
+}
+@media (max-width: 425px){
+    .logo{
+        width: 100%;
+    }
+    .div-input, .div-button{
+        width: 90%; 
+    }
+}
