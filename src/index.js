@@ -13,9 +13,7 @@ async function fetchDataAndStoreInSessionStorage() {
     // Armazene os dados em sessionStorage
     sessionStorage.setItem('cachedNews', JSON.stringify(news));
   
-    // Chame a função getNews após armazenar os dados
-    getNews();
-  }
+}
   
   // Função para obter os dados da API ou do sessionStorage
   async function getNews() {
@@ -32,10 +30,6 @@ async function fetchDataAndStoreInSessionStorage() {
         footer.style.display = 'flex';
       }
   
-      // Define um mínimo de 5 itens por coluna
-      const itemsPerColumn = 5;
-      const totalItems = itemsPerColumn * imgColumns.length;
-  
       // Loop através das colunas
       for (let i = 0; i < imgColumns.length; i++) {
         // Calcula o índice inicial para esta coluna
@@ -51,7 +45,7 @@ async function fetchDataAndStoreInSessionStorage() {
       count_new++;
   
       // Se todas as colunas exibirem o conteúdo atual, reinicia o contador
-      if (count_new * imgColumns.length >= news.length) {
+      if (count_new >= imgColumns.length ) {
         count_new = 0;
       }
     }
